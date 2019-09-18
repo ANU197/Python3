@@ -8,13 +8,6 @@ r = requests.get(URL1, headers=headers)
 
 soup = BeautifulSoup(r.content, "lxml")
 
-# ls = soup.findAll("table",{"class":"ratesTable"})
-# currency = []
-# for list1 in ls:
-#     currency = list1.get_text()
-#     # print(list(currency))
-#     l1 = currency.strip("\n").strip(" ").split("\n")
-#     print(l1)pip 
 
 
 def livecurrencyexchange():
@@ -49,6 +42,4 @@ def livecurrencyexchange():
 
 livecurrencyexchange()
 
-# for row in currency1:
-#     cur = row
-#     print(cur)
+
